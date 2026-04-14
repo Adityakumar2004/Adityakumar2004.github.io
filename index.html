@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Aditya</title>
+  <meta name="author" content="Aditya">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+<table style="width:100%;max-width:820px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr style="padding:0px">
+    <td style="padding:0px">
+
+      <!-- ========== HEADER: Name + Photo ========== -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr style="padding:0px">
+          <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <p class="name" style="text-align:center;">BV Aditya Kumar</p>
+
+            <p>
+              I am interested in building intelligent machines that can interact with the physical world as naturally and reliably as humans.
+              My interests lie in robot learning and control. I am fascinated by problems that involve physical interaction, where perception, decision-making, and control must work together under uncertainty.
+            </p>
+            <p>
+              Currently working on manipulation tasks at <a href="https://www.lsquarelabs.com/">lsquarelabs</a>.
+            </p>
+
+            <p style="text-align:center">
+              <a href="mailto:adityabvkumar@gmail.com">Email</a> &nbsp;/&nbsp;
+              <a href="https://www.linkedin.com/in/aditya-kumar-bv/">LinkedIn</a> &nbsp;/&nbsp;
+              <a href="https://github.com/Adityakumar2004/">GitHub</a> &nbsp;/&nbsp;
+              <a href="https://x.com/aditya_kumar_bv">X</a>
+            </p>
+          </td>
+          <td style="padding:2.5%;width:37%;max-width:37%">
+            <!-- Place your photo in the photo/ subfolder and update the src -->
+            <a href="photo/personal_photo.jpeg">
+              <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;"
+                   alt="profile photo"
+                   src="photo/personal_photo.jpeg">
+            </a>
+          </td>
+        </tr>
+      </tbody></table>
+
+      <!-- ========== EDUCATION ========== -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:16px;width:100%;vertical-align:middle">
+            <h2>Education</h2>
+            <hr class="section-divider">
+            <table style="border:0px;border-spacing:0px;margin-top:12px;width:100%;"><tbody>
+              <tr>
+                <td style="padding:8px 16px 8px 0px;width:100px;vertical-align:middle;text-align:center;">
+                  <img src="photo/iit_jodhpur_logo.webp"
+                       alt="IIT Jodhpur"
+                       class="affiliation-logo">
+                </td>
+                <td style="padding:8px 0px;vertical-align:middle">
+                  <strong>Indian Institute of Technology Jodhpur</strong><br>
+                  B.Tech, Mechanical Engineering<br>
+                  <span style="color:#777;">2021 – 2025</span>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+      </tbody></table>
+
+
+      <!-- ========== CURRENTLY WORKING ON ========== -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:16px;width:100%;vertical-align:middle">
+            <h2>Currently Working On</h2>
+            <hr class="section-divider">
+          </td>
+        </tr>
+      </tbody></table>
+
+      <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <tr onmouseout="peginhole_stop()" onmouseover="peginhole_start()">
+          <td style="padding:16px;width:240px;vertical-align:middle">
+            <div style="position:relative;width:240px;height:134px;overflow:hidden;border-radius:4px;">
+              <div id="peginhole_image" style="position:absolute;top:0;left:0;width:240px;height:134px;opacity:0;transition:opacity .2s ease-in-out;">
+                <video width="240" height="134" muted autoplay loop style="object-fit:cover;">
+                  <source src="videos/peginhole.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img src="images/peginhole_thumb.jpg" width="240" height="134" style="object-fit:cover;display:block;" onerror="this.style.display='none'">
+            </div>
+            <script type="text/javascript">
+              function peginhole_start() {
+                document.getElementById('peginhole_image').style.opacity = "1";
+              }
+              function peginhole_stop() {
+                document.getElementById('peginhole_image').style.opacity = "0";
+              }
+              peginhole_stop();
+            </script>
+          </td>
+          <td style="padding:16px 20px;width:75%;vertical-align:middle">
+            <span class="papertitle">Peg in Hole RL</span>
+            <span style="float:right;color:#777;">May 2025 – Present</span>
+            <br><br>
+            <ul style="margin:0;padding-left:18px;">
+              <li>Built a custom PPO training pipeline in PyTorch; trained PPO and PPO+LSTM agents for peg-in-hole assembly in Isaac Lab.</li>
+              <li>Stabilized learning with advantage estimation and normalization; evaluated policy behavior in contact-rich scenarios.</li>
+              <li>Experimented with Differential Inverse Kinematics (Diff-IK) and Operational Space Controller (OSC) in simulation and on real hardware.</li>
+              <li>Estimated inertial parameter residuals for gravity compensation via least-squares regression on static torque data.</li>
+              <li>Currently improving policy robustness to pose tracking error on real hardware.</li>
+            </ul>
+            <br>
+            Demonstrations: <a href="https://youtu.be/DpaqLlEZf2U">Simulation</a> &nbsp;/&nbsp; <a href="https://www.youtube.com/shorts/pQlizxiw-A4">Real-robot (OSC)</a>
+            <br>
+            <p style="margin:6px 0 0 0;">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Isaac Lab</span>
+              <span class="tag">PPO</span>
+              <span class="tag">LSTM</span>
+              <span class="tag">Diff-IK</span>
+              <span class="tag">OSC</span>
+            </p>
+          </td>
+        </tr>
+
+      </tbody></table>
+
+      <!-- ========== EXPERIENCE ========== -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:16px;width:100%;vertical-align:middle">
+            <h2>Experience</h2>
+            <hr class="section-divider">
+          </td>
+        </tr>
+      </tbody></table>
+
+      <table style="width:100%;border:0px;border-spacing:0px 6px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <!-- Experience 1: TIH IHub Drishti -->
+        <tr onmouseout="tih_stop()" onmouseover="tih_start()">
+          <td style="padding:16px;width:240px;vertical-align:middle">
+            <div style="position:relative;width:240px;height:135px;overflow:hidden;border-radius:4px;">
+              <div id="tih_image" style="position:absolute;top:0;left:0;width:240px;height:135px;opacity:0;transition:opacity .2s ease-in-out;">
+                <video width="240" height="135" muted autoplay loop style="object-fit:cover;">
+                  <source src="videos/visual_servoing_fast.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img src="images/visual_servoing.png" width="240" height="135" style="object-fit:cover;display:block;">
+            </div>
+            <script type="text/javascript">
+              function tih_start() {
+                document.getElementById('tih_image').style.opacity = "1";
+              }
+              function tih_stop() {
+                document.getElementById('tih_image').style.opacity = "0";
+              }
+              tih_stop();
+            </script>
+          </td>
+          <td style="padding:16px 20px;vertical-align:middle">
+            <span class="papertitle">Internship — IHub Drishti</span>
+            <span style="float:right;color:#777;">Sep. 2024 – Nov. 2024</span><br>
+            <em>Visual Servoing on Kinova Kortex Gen3 7-DOF</em>
+            <ul style="margin:6px 0 4px 0;padding-left:20px;">
+              <li>Implemented an eye-in-hand visual servoing system on both Gazebo simulation and a physical Kinova Kortex Gen3 7-DOF robot [<a href="https://www.youtube.com/watch?v=HrTwXm3lAAI">Demonstration</a>]</li>
+            </ul>
+            <p style="margin:4px 0;">
+              <span class="tag">ROS</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Kinova Kortex Gen3</span>
+            </p>
+          </td>
+        </tr>
+
+        <!-- Experience 2: IIST -->
+        <tr>
+          <td style="padding:16px;width:240px;vertical-align:middle">
+            <div style="position:relative;width:240px;height:135px;overflow:hidden;border-radius:4px;">
+              <img src="images/quarter_car.png" width="240" height="135" style="object-fit:cover;display:block;">
+            </div>
+          </td>
+          <td style="padding:6px 16px;vertical-align:top">
+            <span class="papertitle">Internship — IIST Thiruvananthapuram</span>
+            <span style="float:right;color:#777;">June 2024 – July 2024</span><br>
+            <em>Supervised by Dr. Rajesh Joseph</em>
+            <ul style="margin:6px 0 4px 0;padding-left:20px;">
+              <li>Designed a QFT-based controller for a quarter-car suspension model to attenuate disturbance from uneven road profiles.</li>
+              <li>Simulations conducted in MATLAB using the QFT toolbox.</li>
+            </ul>
+            <p style="margin:4px 0;">
+              <span class="tag">MATLAB</span>
+              <span class="tag">QFT Toolbox</span>
+              <span class="tag">Control Systems</span>
+            </p>
+          </td>
+        </tr>
+
+        <!-- Experience 3: Undergraduate Researcher -->
+        <tr onmouseout="ug_stop()" onmouseover="ug_start()">
+          <td style="padding:16px;width:240px;vertical-align:middle">
+            <div style="position:relative;width:240px;height:135px;overflow:hidden;border-radius:4px;">
+              <div id="ug_image" style="position:absolute;top:0;left:0;width:240px;height:134px;opacity:0;transition:opacity .2s ease-in-out;">
+                <video width="240" height="134" muted autoplay loop style="object-fit:cover;">
+                  <source src="videos/medical_palpation.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img src="images/medical_palpation.jpg" width="240" height="135" style="object-fit:cover;display:block;">
+            </div>
+            <script type="text/javascript">
+              function ug_start() {
+                document.getElementById('ug_image').style.opacity = "1";
+              }
+              function ug_stop() {
+                document.getElementById('ug_image').style.opacity = "0";
+              }
+              ug_stop();
+            </script>
+          </td>
+          <td style="padding:6px 16px 16px 16px;vertical-align:top">
+            <span class="papertitle">Undergraduate Researcher — IIT Jodhpur</span>
+            <span style="float:right;color:#777;">Sept. 2023 – Feb. 2024</span><br>
+            <em>Supervised by Dr. Amit Bharadwaj &amp; Dr. Rajendra Nagar</em>
+            <ul style="margin:6px 0 4px 0;padding-left:20px;">
+              <li>Conducted experiments for data-driven haptic modelling and rendering of interactions on deformable objects using a UR3e robot.</li>
+              <li>Developed a pipeline for multi-sensor data collection; tracked visual markers using KLT and YOLO.</li>
+              <li>Data feeds into the ongoing AR/VR simulator for medical palpation project.</li>
+            </ul>
+            <p style="margin:4px 0;">
+              <span class="tag">ROS</span>
+              <span class="tag">Python</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">MoveIt</span>
+              <span class="tag">PyRealSense</span>
+              <span class="tag">UR3e</span>
+            </p>
+          </td>
+        </tr>
+
+      </tbody></table>
+
+      <!-- ========== PROJECTS ========== -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:16px;width:100%;vertical-align:middle">
+            <h2>Projects</h2>
+            <hr class="section-divider">
+          </td>
+        </tr>
+      </tbody></table>
+
+      <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <!-- Project: Object Picking -->
+        <tr onmouseout="picking_stop()" onmouseover="picking_start()">
+          <td style="padding:16px;width:240px;vertical-align:middle">
+            <div style="position:relative;width:240px;height:134px;overflow:hidden;border-radius:4px;">
+              <div id="picking_image" style="position:absolute;top:0;left:0;width:240px;height:134px;opacity:0;transition:opacity .2s ease-in-out;">
+                <video width="240" height="134" muted autoplay loop style="object-fit:cover;">
+                  <source src="videos/object_picking.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img src="images/object_picking_thumb.jpg" width="240" height="134" style="object-fit:cover;display:block;">
+            </div>
+            <script type="text/javascript">
+              function picking_start() {
+                document.getElementById('picking_image').style.opacity = "1";
+              }
+              function picking_stop() {
+                document.getElementById('picking_image').style.opacity = "0";
+              }
+              picking_stop();
+            </script>
+          </td>
+          <td style="padding:16px 20px;width:75%;vertical-align:middle">
+            <span class="papertitle">Object Picking</span>
+            <br><br>
+            <ul style="margin:0;padding-left:18px;">
+              <li>Implemented object picking using YOLO and Intel RealSense for basic detection and positioning.</li>
+            </ul>
+            <br>
+            <p style="margin:6px 0 0 0;">
+              <span class="tag">YOLO</span>
+              <span class="tag">Intel RealSense</span>
+              <span class="tag">Python</span>
+            </p>
+          </td>
+        </tr>
+
+        <!-- Project: System Identification -->
+        <tr onmouseout="sysid_stop()" onmouseover="sysid_start()">
+          <td style="padding:16px;width:240px;vertical-align:middle">
+            <div style="position:relative;width:240px;height:134px;overflow:hidden;border-radius:4px;">
+              <div id="sysid_image" style="position:absolute;top:0;left:0;width:240px;height:134px;opacity:0;transition:opacity .2s ease-in-out;">
+                <video width="240" height="134" muted autoplay loop style="object-fit:cover;">
+                  <source src="videos/sysid.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img src="images/sysid_thumb.jpg" width="240" height="134" style="object-fit:cover;display:block;">
+            </div>
+            <script type="text/javascript">
+              function sysid_start() {
+                document.getElementById('sysid_image').style.opacity = "1";
+              }
+              function sysid_stop() {
+                document.getElementById('sysid_image').style.opacity = "0";
+              }
+              sysid_stop();
+            </script>
+          </td>
+          <td style="padding:16px 20px;width:75%;vertical-align:middle">
+            <span class="papertitle">System Identification</span>
+            <br><br>
+            <ul style="margin:0;padding-left:18px;">
+              <li>Tuned mass parameters for passive gravity compensation [<a href="https://drive.google.com/file/d/1WxPv8pfFvvTeNXZECETmMDsifBTVeF2Y/view">video</a>]</li>
+              <li>Estimated armature, friction, and damping using CMA-ES [<a href="https://drive.google.com/file/d/1-nUTisSHdCROjxkQ3kG3XOMuM3ZvGIqR/view">video</a>]</li>
+            </ul>
+          </td>
+        </tr>
+
+        <!-- Project: RRT Autonomous Car Parking -->
+        <tr onmouseout="rrt_stop()" onmouseover="rrt_start()">
+          <td style="padding:16px;width:240px;vertical-align:middle">
+            <div style="position:relative;width:240px;height:134px;overflow:hidden;border-radius:4px;">
+              <div id="rrt_image" style="position:absolute;top:0;left:0;width:240px;height:134px;opacity:0;transition:opacity .2s ease-in-out;">
+                <video width="240" height="134" muted autoplay loop style="object-fit:cover;">
+                  <source src="videos/rrt.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img src="images/rrt_thumb.jpg" width="240" height="134" style="object-fit:cover;display:block;" onerror="this.style.display='none'">
+            </div>
+            <script type="text/javascript">
+              function rrt_start() {
+                document.getElementById('rrt_image').style.opacity = "1";
+              }
+              function rrt_stop() {
+                document.getElementById('rrt_image').style.opacity = "0";
+              }
+              rrt_stop();
+            </script>
+          </td>
+          <td style="padding:16px 20px;width:75%;vertical-align:middle">
+            <span class="papertitle">RRT for Autonomous Car Parking</span>
+            <br><br>
+            <ul style="margin:0;padding-left:18px;">
+              <li>Implemented RRT for a non-holonomic mobile robot on a parking map created via SLAM.</li>
+            </ul>
+            <br>
+            [<a href="#">GitHub</a>]
+            <br>
+            <p style="margin:6px 0 0 0;">
+              <span class="tag">ROS1</span>
+              <span class="tag">Gazebo</span>
+              <span class="tag">SLAM</span>
+            </p>
+          </td>
+        </tr>
+
+        <!-- Project 4: Pluto Drone -->
+        <tr onmouseout="pluto_stop()" onmouseover="pluto_start()">
+          <td style="padding:16px;width:240px;vertical-align:middle">
+            <div style="position:relative;width:240px;height:134px;overflow:hidden;border-radius:4px;">
+              <div id="pluto_image" style="position:absolute;top:0;left:0;width:240px;height:134px;opacity:0;transition:opacity .2s ease-in-out;">
+                <video width="240" height="134" muted autoplay loop style="object-fit:cover;">
+                  <source src="videos/pluto.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img src="images/pluto_thumb.jpg" width="240" height="134" style="object-fit:cover;display:block;">
+            </div>
+            <script type="text/javascript">
+              function pluto_start() {
+                document.getElementById('pluto_image').style.opacity = "1";
+              }
+              function pluto_stop() {
+                document.getElementById('pluto_image').style.opacity = "0";
+              }
+              pluto_stop();
+            </script>
+          </td>
+          <td style="padding:16px 20px;width:75%;vertical-align:middle">
+            <span class="papertitle">Pluto Drone — Inter IIT Tech Meet</span>
+            <br>
+            <em>Jan. 2023 – Feb. 2023</em>
+            <br><br>
+            <ul style="margin:0;padding-left:18px;">
+              <li>Developed a Python wrapper for the Pluto drone using multithreading; integrated keyboard control.</li>
+              <li>Implemented a PID controller for stable hover.</li>
+            </ul>
+            <br>
+            [<a href="https://github.com/Adityakumar2004/team_ID_51_Drona">GitHub</a>]
+            <br>
+            <p style="margin:6px 0 0 0;">
+              <span class="tag">Socket Programming</span>
+              <span class="tag">Threading</span>
+              <span class="tag">Python</span>
+              <span class="tag">ROS1</span>
+              <span class="tag">C++</span>
+              <span class="tag">OpenCV</span>
+            </p>
+          </td>
+        </tr>
+
+
+      </tbody></table>
+
+      <!-- ========== FOOTER ========== -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:16px;text-align:center;color:#aaa;">
+            Design inspired by <a href="https://jonbarron.info" style="color:#aaa;">Jon Barron's website</a>.
+          </td>
+        </tr>
+      </tbody></table>
+
+    </td>
+  </tr>
+</tbody></table>
+</body>
+</html>
