@@ -20,7 +20,7 @@
             <p class="name" style="text-align:center;">BV Aditya Kumar</p>
 
             <p>
-              I am interested in building intelligent machines that can interact with the physical world as naturally and reliably as humans.
+              I like building intelligent machines that can interact with the physical world as naturally and reliably as humans.
               My interests lie in robot learning and control. I am fascinated by problems that involve physical interaction, where perception, decision-making, and control must work together under uncertainty.
             </p>
             <p>
@@ -36,10 +36,10 @@
           </td>
           <td style="padding:2.5%;width:37%;max-width:37%">
             <!-- Place your photo in the photo/ subfolder and update the src -->
-            <a href="photo/personal_photo.jpeg">
+            <a href="photo/IMG_7305.jpg">
               <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;"
                    alt="profile photo"
-                   src="photo/personal_photo.jpeg">
+                   src="photo/IMG_7305.jpg">
             </a>
           </td>
         </tr>
@@ -82,7 +82,7 @@
 
       <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-        <tr onmouseout="peginhole_stop()" onmouseover="peginhole_start()">
+        <tr bgcolor="#ffffd0" onmouseout="peginhole_stop()" onmouseover="peginhole_start()">
           <td style="padding:16px;width:240px;vertical-align:middle">
             <div style="position:relative;width:240px;height:134px;overflow:hidden;border-radius:4px;">
               <div id="peginhole_image" style="position:absolute;top:0;left:0;width:240px;height:134px;opacity:0;transition:opacity .2s ease-in-out;">
@@ -107,23 +107,13 @@
             <span style="float:right;color:#777;">May 2025 – Present</span>
             <br><br>
             <ul style="margin:0;padding-left:18px;">
-              <li>Built a custom PPO training pipeline in PyTorch; trained PPO and PPO+LSTM agents for peg-in-hole assembly in Isaac Lab.</li>
-              <li>Stabilized learning with advantage estimation and normalization; evaluated policy behavior in contact-rich scenarios.</li>
-              <li>Experimented with Differential Inverse Kinematics (Diff-IK) and Operational Space Controller (OSC) in simulation and on real hardware.</li>
-              <li>Estimated inertial parameter residuals for gravity compensation via least-squares regression on static torque data.</li>
-              <li>Currently improving policy robustness to pose tracking error on real hardware.</li>
+              <li>Built and trained PPO and PPO+LSTM agents for peg-in-hole assembly in Isaac Lab.</li>
+              <li>Explored Differential IK and Operational Space Control (OSC) as low-level controllers for the agent.</li>
+              <li>Estimated inertial parameters for improved gravity compensation using torque data.</li>
+              <li>Currently reducing the gap between sim and real and making the policy robust to the difference.</li>
             </ul>
             <br>
-            Demonstrations: <a href="https://youtu.be/DpaqLlEZf2U">Simulation</a> &nbsp;/&nbsp; <a href="https://www.youtube.com/shorts/pQlizxiw-A4">Real-robot (OSC)</a>
-            <br>
-            <p style="margin:6px 0 0 0;">
-              <span class="tag">PyTorch</span>
-              <span class="tag">Isaac Lab</span>
-              <span class="tag">PPO</span>
-              <span class="tag">LSTM</span>
-              <span class="tag">Diff-IK</span>
-              <span class="tag">OSC</span>
-            </p>
+            Demonstrations: <a href="https://youtu.be/DpaqLlEZf2U">Simulation</a> &nbsp;/&nbsp; <a href="https://www.youtube.com/shorts/pQlizxiw-A4">Real Robot (OSC)</a>
           </td>
         </tr>
 
@@ -167,13 +157,11 @@
             <span style="float:right;color:#777;">Sep. 2024 – Nov. 2024</span><br>
             <em>Visual Servoing on Kinova Kortex Gen3 7-DOF</em>
             <ul style="margin:6px 0 4px 0;padding-left:20px;">
-              <li>Implemented an eye-in-hand visual servoing system on both Gazebo simulation and a physical Kinova Kortex Gen3 7-DOF robot [<a href="https://www.youtube.com/watch?v=HrTwXm3lAAI">Demonstration</a>]</li>
+              <li>Implemented an eye-in-hand visual servoing system in Gazebo and on real hardware.</li>
+              <li>Implemented vision-based target tracking through end-effector motion.</li>
             </ul>
-            <p style="margin:4px 0;">
-              <span class="tag">ROS</span>
-              <span class="tag">OpenCV</span>
-              <span class="tag">Kinova Kortex Gen3</span>
-            </p>
+            <br>
+            [<a href="https://www.youtube.com/watch?v=HrTwXm3lAAI">Demonstration</a>]
           </td>
         </tr>
 
@@ -192,11 +180,6 @@
               <li>Designed a QFT-based controller for a quarter-car suspension model to attenuate disturbance from uneven road profiles.</li>
               <li>Simulations conducted in MATLAB using the QFT toolbox.</li>
             </ul>
-            <p style="margin:4px 0;">
-              <span class="tag">MATLAB</span>
-              <span class="tag">QFT Toolbox</span>
-              <span class="tag">Control Systems</span>
-            </p>
           </td>
         </tr>
 
@@ -230,14 +213,6 @@
               <li>Developed a pipeline for multi-sensor data collection; tracked visual markers using KLT and YOLO.</li>
               <li>Data feeds into the ongoing AR/VR simulator for medical palpation project.</li>
             </ul>
-            <p style="margin:4px 0;">
-              <span class="tag">ROS</span>
-              <span class="tag">Python</span>
-              <span class="tag">OpenCV</span>
-              <span class="tag">MoveIt</span>
-              <span class="tag">PyRealSense</span>
-              <span class="tag">UR3e</span>
-            </p>
           </td>
         </tr>
 
@@ -280,14 +255,10 @@
             <span class="papertitle">Object Picking</span>
             <br><br>
             <ul style="margin:0;padding-left:18px;">
-              <li>Implemented object picking using YOLO and Intel RealSense for basic detection and positioning.</li>
+              <li>Built an object picking pipeline using YOLO and Intel RealSense for detection and depth-based position estimation.</li>
+              <li>Designed a state machine for pick-and-place execution.</li>
+              <li>Applied Differential Inverse Kinematics (Diff IK) for low-level control.</li>
             </ul>
-            <br>
-            <p style="margin:6px 0 0 0;">
-              <span class="tag">YOLO</span>
-              <span class="tag">Intel RealSense</span>
-              <span class="tag">Python</span>
-            </p>
           </td>
         </tr>
 
@@ -316,8 +287,8 @@
             <span class="papertitle">System Identification</span>
             <br><br>
             <ul style="margin:0;padding-left:18px;">
-              <li>Tuned mass parameters for passive gravity compensation [<a href="https://drive.google.com/file/d/1WxPv8pfFvvTeNXZECETmMDsifBTVeF2Y/view">video</a>]</li>
-              <li>Estimated armature, friction, and damping using CMA-ES [<a href="https://drive.google.com/file/d/1-nUTisSHdCROjxkQ3kG3XOMuM3ZvGIqR/view">video</a>]</li>
+              <li>Tuned mass parameters for improved passive gravity compensation [<a href="https://drive.google.com/file/d/1WxPv8pfFvvTeNXZECETmMDsifBTVeF2Y/view">video</a>]</li>
+              <li>Estimated armature, friction, and damping using CMA-ES by matching real and simulated joint responses to excitation (chirp) trajectories applied in end-effector space [<a href="https://drive.google.com/file/d/1-nUTisSHdCROjxkQ3kG3XOMuM3ZvGIqR/view">video</a>]</li>
             </ul>
           </td>
         </tr>
@@ -347,16 +318,12 @@
             <span class="papertitle">RRT for Autonomous Car Parking</span>
             <br><br>
             <ul style="margin:0;padding-left:18px;">
-              <li>Implemented RRT for a non-holonomic mobile robot on a parking map created via SLAM.</li>
+              <li>Implemented RRT for autonomous parking of a non-holonomic mobile robot.</li>
+              <li>Built a global map using SLAM and inflated obstacles to account for safety margins.</li>
+              <li>Developed a constraint-aware planner following a sampling-based approach inspired by prior work.</li>
             </ul>
             <br>
-            [<a href="#">GitHub</a>]
-            <br>
-            <p style="margin:6px 0 0 0;">
-              <span class="tag">ROS1</span>
-              <span class="tag">Gazebo</span>
-              <span class="tag">SLAM</span>
-            </p>
+            [<a href="https://github.com/Adityakumar2004/RRT_car">GitHub</a>]
           </td>
         </tr>
 
@@ -387,20 +354,11 @@
             <em>Jan. 2023 – Feb. 2023</em>
             <br><br>
             <ul style="margin:0;padding-left:18px;">
-              <li>Developed a Python wrapper for the Pluto drone using multithreading; integrated keyboard control.</li>
-              <li>Implemented a PID controller for stable hover.</li>
+              <li>Developed a Python interface for controlling the Pluto drone using multithreading and keyboard inputs.</li>
+              <li>Implemented a PID controller for stable hover and attitude control.</li>
             </ul>
             <br>
             [<a href="https://github.com/Adityakumar2004/team_ID_51_Drona">GitHub</a>]
-            <br>
-            <p style="margin:6px 0 0 0;">
-              <span class="tag">Socket Programming</span>
-              <span class="tag">Threading</span>
-              <span class="tag">Python</span>
-              <span class="tag">ROS1</span>
-              <span class="tag">C++</span>
-              <span class="tag">OpenCV</span>
-            </p>
           </td>
         </tr>
 
